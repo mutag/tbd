@@ -13,21 +13,24 @@ backend using phpMyAdmin.
 </p>
 <ul>
 	<li>
-		<a href="recordlist.php">Output Columns and Rows</a>
+		<a href="recordlist.php">Display Columns and Rows of Table</a>
 	</li>
 	<li>
-		<a href="fieldproplist.php">Output Column Info</a>
+		<a href="rowchoicespoof.php">Choose Record to Edit or Delete (Example)</a>
 	</li>
 	<li>
-		<form method='POST' action='recordentry.php'><input type='hidden' value='index' name='file'><input type='hidden' value='Insert' name='submit'><a href="recordentry.php"><button>Create New Record</button></a></form>
-	</li>
-	<li>
-		<a href="recordchoose.php">Choose Record to Edit or Delete</a>
+		<a href="rowentryspoof.php">Add New Record (Example)</a>		
 	</li>
 	<li>
 		<a href="#">TBD Sort Columns</a>
 	</li>
+	<li>
+		<a href="fieldproplist.php">Output Column Info</a>
+	</li>
 </ul>
+<p>The Edit, Delete and Add commands (from this navigation) are all sent to the same page/script for processing
+	through a switch statement. The delete does not yet display a confirmation prompt! (10/10/23)
+</p>
 <div class="clear"></div>
 </div><!-- main -->
 <?php $filename = basename($_SERVER['PHP_SELF']);
