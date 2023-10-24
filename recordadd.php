@@ -1,6 +1,5 @@
 <?php 
 //this file takes the post and decides whether to insert (change), update, or delete the row
-require_once ('../../inc/pfunctions.php'); 
 require_once ('../../inc/atad.php'); 
 mysqli_report(MYSQLI_REPORT_ERROR | MYSQLI_REPORT_STRICT);
 // Check connection
